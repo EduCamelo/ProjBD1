@@ -26,4 +26,4 @@ Uma entidade "Funcionário" foi criada para ser divida para cada setor mencionad
 
 O bônus foi que ele pode ter ponto de fidelidade com cada pedido ou show que o cliente for.
 
-![lexluthorTreinador](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mypokecard.com%2Fen%2FGallery%2FPokemon-Lex-Luthor-7&psig=AOvVaw3Qkv6Xpix8sKo3iM4I6703&ust=1727305210169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCajrvX3IgDFQAAAAAdAAAAABAE)
+![lexluthorTreinador](https://github.com/EduCamelo/ProjBD1/blob/master/lex.jpg)
