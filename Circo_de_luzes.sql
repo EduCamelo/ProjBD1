@@ -34,6 +34,7 @@ CREATE TABLE Mesa_do_cliente_Cliente (
     id_cliente INT PRIMARY KEY,
     Nome VARCHAR,
     Idade DATE,
+    Pontos_fidelidade INT,
     fk_Mesa_id_mesa INT
 );
 
@@ -172,6 +173,11 @@ CREATE TABLE primeiros_socorros_Funcionario_Paciente (
     fk_Funcionario_id_garcom INT,
     fk_Paciente_fk_Cliente_id_cliente INT
 );
+
+CREATE TABLE Ver_show (
+    fk_Cliente_id_cliente INT,
+    fk_Palco_id_palco INT
+);
  
 ALTER TABLE Funcionario ADD CONSTRAINT FK_Funcionario_2
     FOREIGN KEY (fk_telefone_func_telefone_func_PK)
@@ -250,3 +256,12 @@ ALTER TABLE primeiros_socorros_Funcionario_Paciente ADD CONSTRAINT FK_primeiros_
     FOREIGN KEY (fk_Paciente_fk_Cliente_id_cliente)
     REFERENCES Paciente (fk_Cliente_id_cliente)
     ON DELETE NO ACTION;
+ 
+ALTER TABLE Ver_show ADD CONSTRAINT FK_Ver_show_1
+    FOREIGN KEY (fk_Cliente_id_cliente)
+    REFERENCES ??? (???);
+ 
+ALTER TABLE Ver_show ADD CONSTRAINT FK_Ver_show_2
+    FOREIGN KEY (fk_Palco_id_palco)
+    REFERENCES Palco (id_palco)
+    ON DELETE RESTRICT;
